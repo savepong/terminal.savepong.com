@@ -21,6 +21,9 @@ function processInput(input = '') {
     case 'medium':
       return { text: '<a href="https://medium.com/@savepong" target="_blank">https://medium.com/@savepong</a>'};
 
+    case 'image':
+      return { text: '<img width="200" height="200" src="https://avatars0.githubusercontent.com/u/15765838?s=460&v=4" alt="me"/>' };
+
     case 'help':
       return { text: 'Available commands are 👇 ', commands: commands };
 
@@ -29,17 +32,17 @@ function processInput(input = '') {
       break;
   }
 
-  if (input === "help") {
-    return { text: "Available commands are `home`, `help` and `image`", commands: commands };
-  } else if (input === 'home') {
-    return { text: homeText, commands: commands };
-  } else if (input === 'image') {
-    return { text: '<img width="200" height="200" src="https://avatars0.githubusercontent.com/u/15765838?s=460&v=4" alt="me"/>', commands: commands };
-  } else if (input) {
-    return { text: 'Command not found\n', commands: commands };
-  } else {
-    return { text: '', commands: commands };
-  }
+  // if (input === "help") {
+  //   return { text: "Available commands are `home`, `help` and `image`", commands: commands };
+  // } else if (input === 'home') {
+  //   return { text: homeText, commands: commands };
+  // } else if (input === 'image') {
+  //   return { text: '<img width="200" height="200" src="https://avatars0.githubusercontent.com/u/15765838?s=460&v=4" alt="me"/>', commands: commands };
+  // } else if (input) {
+  //   return { text: 'Command not found\n', commands: commands };
+  // } else {
+  //   return { text: '', commands: commands };
+  // }
 }
 
 Termpage.init(
