@@ -1,5 +1,5 @@
 const homeText = Termpage.replace(`
-...My name is Pongsiri Chuaychoonoo (Savepong), welcome to my terminal!
+...My name is Pongsiri Chuaychoonoo (Savepong), welcome to my terminal...
 ...Type help for the list of available commands....\n\n`,
   {
     help: Termpage.color('orange'),
